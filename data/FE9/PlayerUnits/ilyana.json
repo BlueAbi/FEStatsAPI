@@ -1,0 +1,28 @@
+{
+   "name": "Ilyana",
+   "class": "Mage",
+   "affinity": "Light",
+   "level": 6,
+   "base_stats": {
+     "hp": 20,
+     "str": 1,
+     "mag": 8,
+     "skl": 10,
+     "spd": 9,
+     "lck": 6,
+     "def": 3,
+     "res": 10,
+     "mov": 5,
+     "wgt": 5
+   },
+   "growth_rates": {
+     "hp": 45,
+     "str": 25,
+     "mag": 50,
+     "skl": 45,
+     "spd": 30,
+     "lck": 45,
+     "def": 15,
+     "res": 50
+   }
+}

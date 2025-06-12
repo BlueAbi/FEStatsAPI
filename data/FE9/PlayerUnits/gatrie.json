@@ -1,0 +1,28 @@
+{
+   "name": "Gatrie",
+   "class": "Knight",
+   "affinity": "Light",
+   "level": 9,
+   "base_stats": {
+     "hp": 31,
+     "str": 12,
+     "mag": 0,
+     "skl": 6,
+     "spd": 5,
+     "lck": 5,
+     "def": 14,
+     "res": 0,
+     "mov": 5,
+     "wgt": 16
+   },
+   "growth_rates": {
+     "hp": 80,
+     "str": 55,
+     "mag": 5,
+     "skl": 55,
+     "spd": 25,
+     "lck": 25,
+     "def": 60,
+     "res": 30
+   }
+}

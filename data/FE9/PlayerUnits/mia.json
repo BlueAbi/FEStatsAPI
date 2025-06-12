@@ -1,0 +1,28 @@
+{
+   "name": "Mia",
+   "class": "Myrmidon",
+   "affinity": "Fire",
+   "level": 6,
+   "base_stats": {
+     "hp": 21,
+     "str": 7,
+     "mag": 0,
+     "skl": 10,
+     "spd": 13,
+     "lck": 6,
+     "def": 7,
+     "res": 2,
+     "mov": 6,
+     "wgt": 6
+   },
+   "growth_rates": {
+     "hp": 50,
+     "str": 40,
+     "mag": 30,
+     "skl": 45,
+     "spd": 60,
+     "lck": 45,
+     "def": 20,
+     "res": 25
+   }
+}

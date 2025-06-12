@@ -1,0 +1,28 @@
+{
+   "name": "Rhys",
+   "class": "Priest",
+   "affinity": "Fire",
+   "level": 4,
+   "base_stats": {
+     "hp": 21,
+     "str": 0,
+     "mag": 9,
+     "skl": 7,
+     "spd": 5,
+     "lck": 7,
+     "def": 0,
+     "res": 14,
+     "mov": 5,
+     "wgt": 8
+   },
+   "growth_rates": {
+     "hp": 40,
+     "str": 5,
+     "mag": 60,
+     "skl": 50,
+     "spd": 40,
+     "lck": 50,
+     "def": 25,
+     "res": 55
+   }
+}

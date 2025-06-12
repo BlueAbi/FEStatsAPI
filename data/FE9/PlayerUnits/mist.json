@@ -1,0 +1,28 @@
+{
+   "name": "Mist",
+   "class": "Cleric",
+   "affinity": "Water",
+   "level": 1,
+   "base_stats": {
+     "hp": 16,
+     "str": 1,
+     "mag": 4,
+     "skl": 4,
+     "spd": 7,
+     "lck": 6,
+     "def": 2,
+     "res": 7,
+     "mov": 5,
+     "wgt": 5
+   },
+   "growth_rates": {
+     "hp": 50,
+     "str": 35,
+     "mag": 50,
+     "skl": 25,
+     "spd": 40,
+     "lck": 60,
+     "def": 15,
+     "res": 40
+   }
+}

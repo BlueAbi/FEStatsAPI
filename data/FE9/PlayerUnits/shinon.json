@@ -1,0 +1,28 @@
+{
+   "name": "Shinon",
+   "class": "Sniper",
+   "affinity": "Thunder",
+   "level": 1,
+   "base_stats": {
+     "hp": 32,
+     "str": 9,
+     "mag": 6,
+     "skl": 15,
+     "spd": 13,
+     "lck": 9,
+     "def": 9,
+     "res": 6,
+     "mov": 7,
+     "wgt": 10
+   },
+   "growth_rates": {
+     "hp": 75,
+     "str": 65,
+     "mag": 20,
+     "skl": 70,
+     "spd": 65,
+     "lck": 35,
+     "def": 50,
+     "res": 40
+   }
+}

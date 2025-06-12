@@ -1,0 +1,28 @@
+{
+   "name": "Titania",
+   "class": "Paladin",
+   "affinity": "Light",
+   "level": 1,
+   "base_stats": {
+     "hp": 33,
+     "str": 12,
+     "mag": 4,
+     "skl": 13,
+     "spd": 14,
+     "lck": 11,
+     "def": 11,
+     "res": 7,
+     "mov": 9,
+     "wgt": 31
+   },
+   "growth_rates": {
+     "hp": 80,
+     "str": 45,
+     "mag": 25,
+     "skl": 60,
+     "spd": 50,
+     "lck": 45,
+     "def": 40,
+     "res": 45
+   }
+}
