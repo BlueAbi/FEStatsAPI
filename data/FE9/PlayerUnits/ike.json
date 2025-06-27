@@ -1,5 +1,4 @@
 {
-   "name": "Ike",
    "class": "Ranger",
    "affinity": "Earth",
    "level": 1,
@@ -13,7 +12,8 @@
      "def": 5,
      "res": 0,
      "mov": 6,
-     "wgt": 9
+     "wgt": 9,
+     "bld": 9
    },
    "growth_rates": {
      "hp": 75,
