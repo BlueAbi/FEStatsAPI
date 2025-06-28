@@ -28,22 +28,22 @@ def get_base_stats(game: int, unit: str) -> BaseStats :
     base = data["base_stats"]
     return BaseStats(
         class_=data["class"],
-        affinity=data["affinity"],
 
         lvl=data["level"],
         hp=base["hp"],
         str=base["str"],
-        mag=base["mag"],
+        mag=data.get("mag"),
         skl=base["skl"],
         spd=base["spd"],
         lck=base["lck"],
         def_=base["def"],
         res=base["res"],
         mov=base["mov"],
-        bld=base["bld"],
-        wgt=base["wgt"],
+        bld=data.get("bld"),
+        wgt=data.get("wgt"),
 
-        authority=data.get("authority")
+        authority=data.get("authority"),
+        affinity=data.get("affinity")
     )
 
 @app.get("/growth_rates/{game}/{unit}", response_model=GrowthRates) ## Endpoint
@@ -56,9 +56,9 @@ def get_growth_rates(game: int, unit: str) -> GrowthRates :
     return GrowthRates(
         hp=growth["hp"],
         str=growth["str"],
-        mag=growth["mag"],
-        skl=growth["skl"],
+        mag=data.get("mag"),
         spd=growth["spd"],
+        skl=growth["skl"],
         lck=growth["lck"],
         def_=growth["def"],
         res=growth["res"]
