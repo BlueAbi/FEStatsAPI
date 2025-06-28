@@ -1,0 +1,29 @@
+{
+   "class": "Hero",
+   "affinity": "Earth",
+   "authority": 3,
+   "level": 11,
+   "base_stats": {
+     "hp": 44,
+     "str": 24,
+     "mag": 2,
+     "skl": 28,
+     "spd": 23,
+     "lck": 14,
+     "def": 21,
+     "res": 7,
+     "mov": 7,
+     "wgt": 13,
+     "bld": 12
+   },
+   "growth_rates": {
+     "hp": 65,
+     "str": 55,
+     "mag": 10,
+     "skl": 60,
+     "spd": 35,
+     "lck": 30,
+     "def": 40,
+     "res": 15
+   }
+}

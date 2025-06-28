@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from models import BaseStats, GrowthRates
 
 import json
+from typing import Optional
 from pathlib import Path
 
 app = FastAPI()
@@ -40,7 +41,9 @@ def get_base_stats(game: int, unit: str) -> BaseStats :
         res=base["res"],
         mov=base["mov"],
         bld=base["bld"],
-        wgt=base["wgt"]
+        wgt=base["wgt"],
+
+        authority=data.get("authority")
     )
 
 @app.get("/growth_rates/{game}/{unit}", response_model=GrowthRates) ## Endpoint

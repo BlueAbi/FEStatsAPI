@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field
+from typing import Optional
 
 class BaseStats(BaseModel) :
     class_: str = Field(..., alias="class")
@@ -16,6 +17,9 @@ class BaseStats(BaseModel) :
     mov: int
     bld: int  # Also known as constitution in some games
     wgt: int
+
+    ## Utilized in Genealogy, Thracia, and Radiant Dawn
+    authority: Optional[int] = None
 
     model_config = {
         "populate_by_name": True

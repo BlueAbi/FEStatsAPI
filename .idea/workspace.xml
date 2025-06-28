@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="00cc32df-c34b-4d7e-a302-354103cf3ff6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/FE9/PlayerUnits/ike.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/FE9/PlayerUnits/ike.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -68,7 +69,9 @@
       <workItem from="1749604658682" duration="13222000" />
       <workItem from="1749884509554" duration="1803000" />
       <workItem from="1751006222689" duration="4633000" />
-      <workItem from="1751053776570" duration="6433000" />
+      <workItem from="1751053776570" duration="8290000" />
+      <workItem from="1751086341487" duration="364000" />
+      <workItem from="1751093734268" duration="1062000" />
     </task>
     <servers />
   </component>
