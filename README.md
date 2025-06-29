@@ -2,7 +2,7 @@
 
 ---
 
-Welcome to **FEStatsAPI**, your go-to source for base stats and growth rates for all playable characters in the Fire Emblem series! Please note that this API *does not* include Fire Emblem Heroes data.
+Welcome to **FEStatsAPI**, your go-to source for base stats and growth rates for all playable characters in the Fire Emblem series! Please note that this API *does not* and *will not* include Fire Emblem Heroes data.
 
 ---
 
