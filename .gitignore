@@ -1,0 +1,51 @@
+# PyCharm specific files
+.idea/                          # PyCharm project settings directory
+!/.idea/workspace.xml           # Keep workspace.xml for better local experience (optional, can be ignored)
+!/.idea/tasks.xml               # Keep tasks.xml if you use PyCharm's task management (optional, can be ignored)
+!/.idea/*.iml                   # PyCharm module files (usually named <project_name>.iml)
+!/.idea/modules.xml             # PyCharm modules configuration
+!/.idea/misc.xml                # PyCharm project structure configuration
+!/.idea/vcs.xml                 # PyCharm VCS integration settings
+!/.idea/dictionaries             # User-defined dictionaries
+
+# Python specific files
+*.pyc                           # Compiled Python files
+__pycache__/                    # Python 3 bytecode cache directory
+.pytest_cache/                  # pytest cache directory
+.env/                           # Virtual environment directory (common name)
+venv/                           # Virtual environment directory (another common name)
+env/                            # Virtual environment directory (another common name)
+pip-log.txt                     # Pip log file
+pip-selfcheck.json              # Pip self-check file
+*.egg-info/                     # Python egg-info directories
+.Python                         # macOS specific Python file
+build/                          # Build directory for distributions
+dist/                           # Distribution packages
+*.whl                           # Wheel packages
+*.egg                           # Egg packages
+*.so                            # Shared libraries (e.g., C extensions)
+*.mo                            # Gettext locale files
+.coverage                       # Coverage.py results file
+.tox/                           # Tox virtual environments
+nosetests.xml                   # Nose tests output
+coverage.xml                    # Coverage.py XML report
+htmlcov/                        # Coverage.py HTML report directory
+.mypy_cache/                    # MyPy type checker cache
+.ruff_cache/                    # Ruff linter/formatter cache
+
+# Operating System Files
+.DS_Store                       # macOS thumbnail cache
+.Trashes                        # macOS trash directory
+Thumbs.db                       # Windows thumbnail cache
+ehthumbs.db                     # Windows media cache
+desktop.ini                     # Windows desktop customization
+*.log                           # Log files
+*.sqlite3                       # SQLite database files (if used for development)
+
+# Data and Secret Files (if applicable)
+*.csv                           # Example: If you generate CSVs locally
+*.json                          # Example: If you generate JSONs locally
+*.db                            # Example: Generic database files
+secrets.py                      # Example: File containing API keys or sensitive info
+config.ini                      # Example: Configuration files that might contain sensitive data
+.passwd                         # Example: Password files
