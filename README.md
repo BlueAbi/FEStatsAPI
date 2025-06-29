@@ -1,15 +1,29 @@
 # FEStatsAPI
-An API containing base stats and growth rates for all playable characters in the Fire Emblem series. Doesn't include Heroes, sorry lol. Don't want to deal with that nightmare, and there are plenty of other sources out there anyway.
 
-This is currently still deep in development and is only dealing with FE9 (Path of Radiance) units, their base stats, growth rates, class, and level. No particular reason other than it's my favortie FE game. Once I have confirmed it to run well. I will begin adding units from the other games, then eventually expand the information beyond just stats.
+---
 
-2025-06-27
-API is confirmed to be working! Seems to return data just fine. I'm now working on implementing stats for the rest of the games. Stay tuned!
+Welcome to **FEStatsAPI**, your go-to source for base stats and growth rates for all playable characters in the Fire Emblem series! Please note that this API *does not* include Fire Emblem Heroes data.
 
-For now, endpoints are going to structured like this. I may change this in the future, as I plan to add more than just Player Units, but I'll cross that bridge when I get there:
-For base stats: base_stats/[number of the game in order of release]/[character name]
-For growth rates: growth_rates/[number of the game in order of release]/[character name]
+---
 
-Example with FE9 Ike:
-base_stats/9/ike
-growth_rates/9/ike
+## Current Development Status
+
+The API is currently in deep development, with **Fire Emblem: Path of Radiance (FE9)** being the focus. This initial phase includes base stats, growth rates, class, and starting level for FE9 units. The API has been confirmed to be working as of **June 27, 2025**, and efforts are now underway to implement data for the rest of the Fire Emblem games. Future plans include expanding the information beyond just stats.
+
+---
+
+## Endpoint Structure
+
+The current endpoint structure is straightforward, though it may be subject to change as the API expands to include non-player units.
+
+* **Base Stats**: `base_stats/[game_number]/[character_name]`
+* **Growth Rates**: `growth_rates/[game_number]/[character_name]`
+
+**Example for FE9 Ike:**
+
+* Base Stats: `base_stats/9/ike`
+* Growth Rates: `growth_rates/9/ike`
+
+---
+
+Stay tuned for more updates as we continue to build out the FEStatsAPI!
