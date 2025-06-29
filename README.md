@@ -5,3 +5,11 @@ This is currently still deep in development and is only dealing with FE9 (Path o
 
 2025-06-27
 API is confirmed to be working! Seems to return data just fine. I'm now working on implementing stats for the rest of the games. Stay tuned!
+
+For now, endpoints are going to structured like this. I may change this in the future, as I plan to add more than just Player Units, but I'll cross that bridge when I get there:
+For base stats: base_stats/[number of the game in order of release]/[character name]
+For growth rates: growth_rates/[number of the game in order of release]/[character name]
+
+Example with FE9 Ike:
+base_stats/9/ike
+growth_rates/9/ike
