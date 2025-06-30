@@ -1,0 +1,26 @@
+{
+   "class": "Knight Lord",
+   "authority": 2,
+   "level": 5,
+   "base_stats": {
+     "hp": 35,
+     "str": 14,
+     "mag": 0,
+     "skl": 11,
+     "spd": 12,
+     "lck": 7,
+     "def": 9,
+     "res": 3,
+     "mov": 9
+   },
+   "growth_rates": {
+     "hp": 110,
+     "str": 50,
+     "mag": 5,
+     "skl": 50,
+     "spd": 30,
+     "lck": 40,
+     "def": 40,
+     "res": 5
+   }
+}
