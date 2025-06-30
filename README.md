@@ -8,7 +8,7 @@ Welcome to **FEStatsAPI**, your go-to source for base stats and growth rates for
 
 ## Current Development Status
 
-The API is currently in deep development, with **Fire Emblem: Path of Radiance (FE9)** being the focus. This initial phase includes base stats, growth rates, class, and starting level for FE9 units. The API has been confirmed to be working as of **June 27, 2025**, and efforts are now underway to implement data for the rest of the Fire Emblem games. Future plans include expanding the information beyond just stats. Once I have confirmed all of this working, I will look for a place to host it (hopefully permanently), and then I plan on creating a stats calculator!
+The API is currently in deep development, with **Fire Emblem: Path of Radiance (FE9)** being the focus. This initial phase includes base stats, growth rates, class, and starting level for FE9 units. The API has been confirmed to be working as of **June 27, 2025**, and efforts are now underway to implement data for the rest of the Fire Emblem games. Future plans include expanding the information beyond just stats. Once I have confirmed all of this working, I will look for a place to host it (hopefully permanently and for free), and then I plan on creating a stats calculator!
 
 ---
 
