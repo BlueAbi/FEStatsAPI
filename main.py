@@ -7,9 +7,13 @@ from pathlib import Path
 
 app = FastAPI()
 
-@app.get("/base_stats/{game}/{unit}", response_model=BaseStats) ## Endpoint
-def get_base_stats(game: int, unit: str) -> BaseStats :
-    stat_path = Path(f"data/FE{game}/PlayerUnits/{unit}.json")
+@app.get("/base_stats/{game}/{unit}")
+@app.get("/base_stats/{game}/{book}/{unit}") ## To handle FE3 Book 1 and Book 2
+def get_base_stats(game: int, unit: str, book: Optional[str] = None) -> BaseStats:
+    base_path = Path(f"data/FE{game}")
+    if book:
+        base_path = base_path / book
+    stat_path = base_path / "PlayerUnits" / f"{unit}.json"
     print(f"Loading data from {stat_path}")
 
     if not stat_path.exists() :
@@ -27,24 +31,25 @@ def get_base_stats(game: int, unit: str) -> BaseStats :
 
     base = data["base_stats"]
     return BaseStats(
-        class_=data["class"],
+        class_=data.get("class"),
+        lvl=data.get("level"),
 
-        lvl=data["level"],
-        hp=base["hp"],
-        str=base["str"],
-        mag=data.get("mag"),
-        skl=base["skl"],
-        spd=base["spd"],
-        lck=base["lck"],
-        def_=base["def"],
-        res=base["res"],
-        mov=base["mov"],
-        bld=data.get("bld"),
-        wgt=data.get("wgt"),
+        hp=base.get("hp"),
+        str=base.get("str"),
+        mag=base.get("mag"),
+        skl=base.get("skl"),
+        spd=base.get("spd"),
+        lck=base.get("lck"),
+        def_=base.get("def"),
+        res=base.get("res"),
+        mov=base.get("mov"),
+        bld=base.get("bld"),
+        wgt=base.get("wgt"),
 
         authority=data.get("authority"),
         affinity=data.get("affinity")
     )
+
 
 @app.get("/growth_rates/{game}/{unit}", response_model=GrowthRates) ## Endpoint
 def get_growth_rates(game: int, unit: str) -> GrowthRates :
@@ -52,14 +57,13 @@ def get_growth_rates(game: int, unit: str) -> GrowthRates :
     with stat_path.open() as f :
         data = json.load(f)
 
-    growth = data["growth_rates"]
     return GrowthRates(
-        hp=growth["hp"],
-        str=growth["str"],
+        hp=data.get("hp"),
+        str=data.get("str"),
         mag=data.get("mag"),
-        spd=growth["spd"],
-        skl=growth["skl"],
-        lck=growth["lck"],
-        def_=growth["def"],
-        res=growth["res"]
+        skl=data.get("skl"),
+        spd=data.get("spd"),
+        lck=data.get("lck"),
+        def_=data.get("def"),
+        res=data.get("res")
     )

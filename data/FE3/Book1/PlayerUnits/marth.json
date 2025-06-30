@@ -1,0 +1,25 @@
+{
+    "class": "Lord",
+    "level": 1,
+    "base_stats": {
+        "hp": 18,
+        "str": 5,
+        "skl": 6,
+        "w_level": 6,
+        "spd": 7,
+        "lck": 7,
+        "def": 7,
+        "res": 0,
+        "mov": 7
+    },
+    "growth_rates": {
+        "hp": 90,
+        "str": 50,
+        "skl": 40,
+        "w_level": 40,
+        "spd": 50,
+        "lck": 70,
+        "def": 20,
+        "res": 0
+    }
+}
