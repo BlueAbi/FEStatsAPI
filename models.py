@@ -12,7 +12,7 @@ class BaseStats(BaseModel) :
     spd: int
     lck: int
     def_: int = Field(..., alias="def")
-    res: int
+    res: Optional[int] = None # Does not exist in Thracia it was merged with magic
     mov: int
     bld: Optional[int] = None  # Also known as constitution in some games
     wgt: Optional[int] = None
@@ -35,7 +35,11 @@ class GrowthRates(BaseModel) :
     spd: int
     lck: int
     def_: int = Field(..., alias="def")
-    res: int
+    res: Optional[int] = None
+
+    # Only in Thracia/FE5
+    bld: Optional[int] = None
+    mov: Optional[int] = None
 
     model_config = {
         "populate_by_name": True

@@ -1,0 +1,29 @@
+{
+   "class": "Lord",
+   "authority": 0,
+   "action": 1,
+   "fcm": 2,
+   "level": 1,
+   "base_stats": {
+     "hp": 22,
+     "str": 4,
+     "mag": 0,
+     "skl": 2,
+     "spd": 5,
+     "lck": 6,
+     "def": 3,
+     "bld": 5,
+     "mov": 6
+   },
+   "growth_rates": {
+     "hp": 70,
+     "str": 35,
+     "mag": 10,
+     "skl": 35,
+     "spd": 40,
+     "lck": 40,
+     "def": 25,
+     "bld": 15,
+     "mov": 3
+   }
+}
