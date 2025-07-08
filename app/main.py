@@ -3,8 +3,11 @@ from models import BaseStats, GrowthRates
 from typing import Optional
 from pathlib import Path
 import json
+import logging
 
 app = FastAPI()
+logger = logging.getLogger("uvicorn")
+
 
 def get_stat_path(game: int, unit: str, book: Optional[str] = None) -> Path:
     base_path = Path(f"data/FE{game}")
@@ -12,11 +15,18 @@ def get_stat_path(game: int, unit: str, book: Optional[str] = None) -> Path:
         base_path = base_path / book
     return base_path / "PlayerUnits" / f"{unit}.json"
 
+
+@app.get("/")
+def root():
+    return {"status": "ok", "message": "FE Stats API running"}
+
+
 @app.get("/base_stats/{game}/{unit}", response_model=BaseStats)
-@app.get("/base_stats/{game}/{book}/{unit}", response_model=BaseStats)
+@app.get("/base_stats/{game}/book/{book}/{unit}", response_model=BaseStats)
 def get_base_stats(game: int, unit: str, book: Optional[str] = None) -> BaseStats:
+    unit = unit.lower()
     stat_path = get_stat_path(game, unit, book)
-    print(f"Loading data from {stat_path}")
+    logger.info(f"Loading data from {stat_path}")
 
     if not stat_path.exists():
         raise HTTPException(status_code=404, detail=f"Stats file {stat_path} does not exist")
@@ -49,10 +59,13 @@ def get_base_stats(game: int, unit: str, book: Optional[str] = None) -> BaseStat
         wgt=base.get("wgt")
     )
 
+
 @app.get("/growth_rates/{game}/{unit}", response_model=GrowthRates)
-@app.get("/growth_rates/{game}/{book}/{unit}", response_model=GrowthRates)
+@app.get("/growth_rates/{game}/book/{book}/{unit}", response_model=GrowthRates)
 def get_growth_rates(game: int, unit: str, book: Optional[str] = None) -> GrowthRates:
+    unit = unit.lower()
     stat_path = get_stat_path(game, unit, book)
+    logger.info(f"Loading growth data from {stat_path}")
 
     if not stat_path.exists():
         raise HTTPException(status_code=404, detail=f"Stats file {stat_path} does not exist")
@@ -76,8 +89,6 @@ def get_growth_rates(game: int, unit: str, book: Optional[str] = None) -> Growth
         lck=growth.get("lck"),
         def_=growth.get("def"),
         res=growth.get("res"),
-
-        # Only in Thracia/FE5
         bld=growth.get("bld"),
         mov=growth.get("mov")
     )

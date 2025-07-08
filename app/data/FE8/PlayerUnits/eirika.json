@@ -1,0 +1,26 @@
+{
+   "class": "Lord",
+   "affinity": "Light",
+   "level": 1,
+   "base_stats": {
+     "hp": 16,
+     "str": 4,
+     "skl": 8,
+     "spd": 9,
+     "lck": 5,
+     "def": 3,
+     "res": 1,
+     "bld": 5,
+     "aid": 4,
+     "mov": 5
+   },
+   "growth_rates": {
+     "hp": 70,
+     "str": 40,
+     "skl": 60,
+     "spd": 60,
+     "lck": 60,
+     "def": 30,
+     "res": 30
+   }
+}

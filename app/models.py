@@ -23,6 +23,9 @@ class BaseStats(BaseModel) :
     ## Utilized in Path of Radiance and Radiant Dawn
     affinity: Optional[str] = None
 
+    # Used in games with rescue
+    aid: Optional[int] = None
+
     model_config = {
         "populate_by_name": True
     }
@@ -30,7 +33,7 @@ class BaseStats(BaseModel) :
 class GrowthRates(BaseModel) :
     hp: int
     str: int
-    mag: int
+    mag: Optional[int] = None
     skl: int
     spd: int
     lck: int
